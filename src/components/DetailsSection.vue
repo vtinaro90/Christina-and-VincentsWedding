@@ -99,7 +99,7 @@
     justify-content: center;
     padding: 131px 0px;
     box-sizing: border-box;
-    background-image: url("/public/Details-Container@3x.jpeg");
+    background-image: url("/Details-Container@3x.jpeg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;

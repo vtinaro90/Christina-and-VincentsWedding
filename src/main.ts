@@ -1,10 +1,11 @@
 import { createApp } from "vue";
 import { createRouter, createWebHistory } from "vue-router";
 import App from "./App.vue";
-import "vuetify/styles";
-import { createVuetify } from "vuetify";
-import * as components from "vuetify/components";
-import * as directives from "vuetify/directives";
+// Remove these Vuetify imports that are causing 404:
+// import "vuetify/styles";
+// import { createVuetify } from "vuetify";
+// import * as components from "vuetify/components";
+// import * as directives from "vuetify/directives";
 
 import Homepage from "./pages/Homepage.vue";
 import TravelAndAccomodationPage from "./pages/TravelAndAccomodationPage.vue";
@@ -64,8 +65,10 @@ const addMetaTag = (value: string) => {
   }
 };
 
-const vuetify = createVuetify({ components, directives });
+// Remove Vuetify setup:
+// const vuetify = createVuetify({ components, directives });
 
-createApp(App).use(router).use(vuetify).mount("#app");
+// Remove .use(vuetify) from this line:
+createApp(App).use(router).mount("#app");
 
 export default router;

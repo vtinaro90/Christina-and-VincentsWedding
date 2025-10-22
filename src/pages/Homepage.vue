@@ -67,7 +67,7 @@
     justify-content: center;
     padding: 30px 151px 853px;
     box-sizing: border-box;
-    background-image: url("/public/Hero-Section@3x.png");
+    background-image: url("/Hero-Section@3x.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;

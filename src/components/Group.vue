@@ -11,19 +11,19 @@
       </div>
       <div
         class="registry5"
-        @click="onRegistryTextClick"
+        @click="onRegistryClick"
         :style="registryStyle"
       >
         <p class="christina-and-vincents2">Registry</p>
       </div>
       <div
         class="location2"
-        @click="onLocationTextClick"
+        @click="onLocationClick"
         :style="locationStyle"
       >
         <p class="christina-and-vincents2">Location</p>
       </div>
-      <div class="rsvp5" @click="onRsvpTextClick" :style="rsvpStyle">
+      <div class="rsvp5" @click="onRsvpClick" :style="rsvpStyle">
         <p class="christina-and-vincents2">Rsvp</p>
       </div>
     </nav>
@@ -33,23 +33,27 @@
   import { StyleValue, computed } from "vue"
   import { useRouter } from "vue-router"
 
-  const props = defineProps({
-    titleFlex: { type: String },
-    titleMinHeight: { type: [Object, Array, String, Number, Boolean] },
-    titleHeight: { type: [Object, Array, String, Number, Boolean] },
-    registryWidth: { type: [Object, Array, String, Number, Boolean] },
-    locationHeight: { type: [Object, Array, String, Number, Boolean] },
-    locationAlignSelf: { type: String },
-    locationFontFamily: { type: String },
-    rsvpWidth: { type: [Object, Array, String, Number, Boolean] },
-    onRegistryTextClick: { type: Function },
-    onLocationTextClick: { type: Function },
-    onRsvpTextClick: { type: Function },
-    onTitleClick: { type: Function },
-    onHomeClick: { type: Function },
-    homeWidth: { type: [Object, Array, String, Number, Boolean] },
-  })
+  interface Props {
+    titleFlex?: string
+    titleMinHeight?: string
+    titleHeight?: string
+    registryWidth?: string
+    locationHeight?: string
+    locationAlignSelf?: string
+    locationFontFamily?: string
+    rsvpWidth?: string
+    onRegistryTextClick?: () => void
+    onLocationTextClick?: () => void
+    onRsvpTextClick?: () => void
+    onTitleClick?: () => void
+    onHomeClick?: () => void
+    homeWidth?: string
+  }
+
+  const props = withDefaults(defineProps<Props>(), {})
+  
   const router = useRouter()
+  
   const titleStyle = computed(
     (): StyleValue => ({
       flex: props.titleFlex,
@@ -80,16 +84,28 @@
     }),
   )
 
-  function onRegistryTextClick1() {
-    router.push("/registry-page")
+  function onRegistryClick() {
+    if (props.onRegistryTextClick) {
+      props.onRegistryTextClick()
+    } else {
+      router.push("/registry-page")
+    }
   }
 
-  function onLocationTextClick1() {
-    router.push("/travel-and-accomodation-page")
+  function onLocationClick() {
+    if (props.onLocationTextClick) {
+      props.onLocationTextClick()
+    } else {
+      router.push("/travel-and-accomodation-page")
+    }
   }
 
-  function onRsvpTextClick1() {
-    router.push("/rsvp-page")
+  function onRsvpClick() {
+    if (props.onRsvpTextClick) {
+      props.onRsvpTextClick()
+    } else {
+      router.push("/rsvp-page")
+    }
   }
 
   function onHomeClick() {
