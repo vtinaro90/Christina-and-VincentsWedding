@@ -30,11 +30,7 @@
       <div class="thon-hotel-rozenkrantz">
         <div class="accomodation-section-by-train-title">
           <div class="sandic-byparken">Sandic Byparken</div>
-          <img
-            class="accomodation-section-twemojitrain-icon"
-            alt=""
-            src="/twemoji-train.svg"
-          />
+        
         </div>
         <div class="very-central-and">
           Very central and cozy affordable option

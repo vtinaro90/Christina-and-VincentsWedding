@@ -1,18 +1,14 @@
 <template>
   <section class="details-section3">
     <div class="gravity-uimap-pin">
-      <img class="svg-path-icon" alt="" src="/svg-path.svg" />
+
       <div class="base-background" />
     </div>
     <section class="details-section3-bottom-container">
       <div class="by-air">
         <div class="by-air-title">
           <div class="details-section3-the-ceremony">By Air</div>
-          <img
-            class="emojionesmall-airplane-icon"
-            alt=""
-            src="/emojione-small-airplane.svg"
-          />
+         
         </div>
         <div class="fly-into-bergen">
           Fly into Bergen Airport (BGO). 45 min light rail to city center.
@@ -21,11 +17,7 @@
       <div class="by-train">
         <div class="by-air-title">
           <div class="details-section3-by-train">By Train</div>
-          <img
-            class="emojionesmall-airplane-icon"
-            alt=""
-            src="/twemoji-train.svg"
-          />
+        
         </div>
         <div class="hour-scenic-train">
           7-hour scenic train from Oslo — one of Europe’s most beautiful routes.
@@ -34,11 +26,7 @@
       <div class="by-sea">
         <div class="by-sea-title">
           <div class="details-section3-by-sea">By Sea</div>
-          <img
-            class="noto-v1motor-boat-icon"
-            alt=""
-            src="/noto-v1-motor-boat.svg"
-          />
+        
         </div>
         <div class="ceremony-begins1600">
           Daily ferries from Stavanger and the fjords, arriving right in Bergen

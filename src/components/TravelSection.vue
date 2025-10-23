@@ -4,11 +4,7 @@
       <div class="getting-around-bergen">
         <div class="getting-around-bergen-title">
           <div class="travel-section-title">Getting Around Bergen</div>
-          <img
-            class="travel-section-emojionesmall-airplane-icon"
-            alt=""
-            src="/emojione-small-airplane.svg"
-          />
+         
         </div>
         <div class="getting-around-is">
           Getting around is easy, as Bergen is so compact. This is a short list
@@ -18,11 +14,7 @@
       <section class="travel-info-section">
         <div class="light-rail-title">
           <div class="bybanen-light-rail">Bybanen (light rail)</div>
-          <img
-            class="travel-section-twemojitrain-icon"
-            alt=""
-            src="/twemoji-train.svg"
-          />
+        
         </div>
         <div class="light-rail-text">
           Quick and Easy way to get around, the rail comes very often.
